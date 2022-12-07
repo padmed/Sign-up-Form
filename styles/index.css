@@ -5,12 +5,33 @@ html, body, main {
   font-size: 10px;
 }
 
-main h1 {
-  margin: 0px;
-  font-size: 3.5rem;
+main {
+  display: flex;
 }
 main .left {
-  width: 50%;
+  width: 45%;
   height: 100%;
-  border: 1px solid black;
+  border-right: 2px solid black;
+}
+main .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 55%;
+}
+
+.left h1 {
+  margin: 0px;
+  font-size: 3rem;
+  padding: 1vh;
+}
+
+.right .image-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("../Imgs/background-image.png");
+  background-size: cover;
+  background-repeat: repeat-x;
 }/*# sourceMappingURL=index.css.map */
