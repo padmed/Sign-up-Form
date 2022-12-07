@@ -1,41 +1,44 @@
 @use "base";
 
-html,body,main {
-    height: 100%;
-    font-family: base.$font-Comfortaa;
-    font-size: 10px;
-}
-
-main {
-    display: flex;
-    .left {
-        width: max(45%, 500px);
+    @media only screen and (min-width: 768px) {
+    html,body,main {
         height: 100%;
-        border-right: 2px solid black;
-        
+        font-family: base.$font-Comfortaa;
+        font-size: 10px;
+    }
+
+    main {
+        display: flex;
+        .left {
+            width: max(50%, 500px);
+            height: 100%;
+            border-right: 2px solid black;
+            
+        }
+
+        .right {
+            @include base.flex;
+            height: 100%;
+            width: 50%;
+        }
+    }
+
+    .left {
+        h1 {
+            margin: 0px;
+            font-size: 2.7rem;
+            padding: 2vh;
+            padding-top: 2vh;
+        }
     }
 
     .right {
-        @include base.flex;
-        height: 100%;
-        width: 55%;
-    }
-}
-
-.left {
-    h1 {
-        margin: 0px;
-        font-size: 3rem;
-        padding: 1vh;
-    }
-}
-
-.right {
-    .image-container {
-        height: 100%;
-        width: 100%;
-        background-image: url("../Imgs/background-image.png");
-        background-size: cover;
-        background-repeat: repeat-x;
+        .image-container {
+            height: 100%;
+            width: 100%;
+            background-image: url("../Imgs/background-image.png");
+            background-size: cover;
+            background-repeat: repeat-x;
+        }
     }
 }
