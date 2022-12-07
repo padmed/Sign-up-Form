@@ -1,0 +1,12 @@
+html, body, main {
+  height: 100%;
+}
+
+main h1 {
+  margin: 0px;
+}
+main .left {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+}/*# sourceMappingURL=index.css.map */
