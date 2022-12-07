@@ -1,6 +1,30 @@
 @use "base";
 
-    @media only screen and (min-width: 768px) {
+html,body,main,.left {
+    height: 100%;
+    font-family: base.$font-Comfortaa;
+    font-size: 10px;
+}
+
+header {
+    height: 10%;
+    h1 {
+        @include base.flex;
+        font-size: 3rem;
+    }
+}
+
+.image-container {
+    &.mobile {
+        width: 100%;
+        height: max(50%, 25px);
+        background-image: url("../Imgs/background-mobile.png");
+        background-size: cover;
+        background-repeat: repeat;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     html,body,main {
         height: 100%;
         font-family: base.$font-Comfortaa;
@@ -33,12 +57,20 @@
     }
 
     .right {
-        .image-container {
-            height: 100%;
-            width: 100%;
-            background-image: url("../Imgs/background-image.png");
-            background-size: cover;
-            background-repeat: repeat-x;
+        .image-container{
+            &.desktop{
+                height: 100%;
+                width: 100%;
+                background-image: url("../Imgs/background-image.png");
+                background-size: cover;
+                background-repeat: repeat-x;
+            }
+        }
+    }
+
+    .image-container {
+        &.mobile {
+            background-image: none;
         }
     }
 }

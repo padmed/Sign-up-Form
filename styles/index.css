@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap");
+html, body, main, .left {
+  height: 100%;
+  font-family: "Comfortaa", cursive;
+  font-size: 10px;
+}
+
+header {
+  height: 10%;
+}
+header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.image-container.mobile {
+  width: 100%;
+  height: max(50%, 25px);
+  background-image: url("../Imgs/background-mobile.png");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 @media only screen and (min-width: 768px) {
   html, body, main {
     height: 100%;
@@ -27,11 +52,14 @@
     padding: 2vh;
     padding-top: 2vh;
   }
-  .right .image-container {
+  .right .image-container.desktop {
     height: 100%;
     width: 100%;
     background-image: url("../Imgs/background-image.png");
     background-size: cover;
     background-repeat: repeat-x;
+  }
+  .image-container.mobile {
+    background-image: none;
   }
 }/*# sourceMappingURL=index.css.map */
