@@ -16,6 +16,18 @@ header h1 {
   font-size: 3rem;
 }
 
+.content {
+  margin-top: 10vh;
+}
+.content ul {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
 .image-container.mobile {
   width: 100%;
   height: max(50%, 25px);
@@ -47,6 +59,7 @@ header h1 {
     width: 50%;
   }
   .left h1 {
+    display: block;
     margin: 0px;
     font-size: 2.7rem;
     padding: 2vh;
@@ -61,5 +74,6 @@ header h1 {
   }
   .image-container.mobile {
     background-image: none;
+    height: 0%;
   }
 }/*# sourceMappingURL=index.css.map */
