@@ -14,14 +14,22 @@ header {
     }
 }
 
-.content {
-    margin-top: 10vh;
-    ul {
-        border: 1px solid black;
-        @include base.flex(column);
-        gap: 2vh;
+form{
+    height: 60%;
+    width: 100%;
+    .content {
+        border: 1px solid;
+        height: 100%;
+        margin-top: 10vh;
+    
+        ul {
+            height: 100%;
+            @include base.flex(column, start);
+            gap: 4vh;
+        }
     }
 }
+
 
 .image-container {
     &.mobile {
