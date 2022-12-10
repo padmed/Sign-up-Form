@@ -112,16 +112,47 @@ li input {
   font-size: 1.5rem;
   outline: none;
 }
-li input:valid ~ label, li input:focus ~ label {
+li input:not(:-moz-placeholder-shown) ~ label {
   transform: translateX(10px) translateY(-7px);
   font-size: 1rem;
-  color: white;
+  font-weight: 600;
+  color: black;
   padding: 1px 10px;
-  background-color: black;
-  border: 1px solid black;
+  background-color: white;
+  border: 2px solid black;
   border-radius: 5px;
   letter-spacing: 0.2rem;
 }
-li input:valid ~ label::after, li input:focus ~ label::after {
+li input:not(:-ms-input-placeholder) ~ label {
+  transform: translateX(10px) translateY(-7px);
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  padding: 1px 10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  letter-spacing: 0.2rem;
+}
+li input:focus ~ label,
+li input:not(:placeholder-shown) ~ label {
+  transform: translateX(10px) translateY(-7px);
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  padding: 1px 10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  letter-spacing: 0.2rem;
+}
+li input:not(:-moz-placeholder-shown) ~ label::after {
+  content: none;
+}
+li input:not(:-ms-input-placeholder) ~ label::after {
+  content: none;
+}
+li input:focus ~ label::after,
+li input:not(:placeholder-shown) ~ label::after {
   content: none;
 }/*# sourceMappingURL=index.css.map */
