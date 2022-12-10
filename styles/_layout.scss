@@ -23,8 +23,10 @@ form{
     
         ul {
             height: 100%;
+            margin-top: 100px;
             @include base.flex(column, start);
             padding: 0;
+            gap: 3vh;
         }
     }
 
