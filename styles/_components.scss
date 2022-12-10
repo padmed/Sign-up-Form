@@ -12,8 +12,13 @@ li {
         top: 0;
         left: 0;
         padding: 15px;
-        transition: 0.5s;
+        transition: 0.2s;
         font-size: 1.2rem;
+
+        &::after {
+            content: " (required)";
+            font-style: italic;
+        }
     }
 
     input {
@@ -24,8 +29,8 @@ li {
         border-radius: 5px;
         font-size: 1.5rem;
         outline: none;
-
-
+        
+        
         &:valid ~ label,
         &:focus ~ label {
             transform: translateX(10px) translateY(-7px);
@@ -36,6 +41,11 @@ li {
             border: 1px solid black;
             border-radius: 5px;
             letter-spacing: 0.2rem;
+
+            &::after {
+                content: none;
+            }
         }
-    }
+    }   
+
 }
