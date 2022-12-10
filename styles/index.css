@@ -26,11 +26,13 @@ form .content {
 }
 form .content ul {
   height: 100%;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   padding: 0;
+  gap: 3vh;
 }
 
 .image-container.mobile {
@@ -94,8 +96,12 @@ li label {
   top: 0;
   left: 0;
   padding: 15px;
-  transition: 0.5s;
+  transition: 0.2s;
   font-size: 1.2rem;
+}
+li label::after {
+  content: " (required)";
+  font-style: italic;
 }
 li input {
   width: 100%;
@@ -115,4 +121,7 @@ li input:valid ~ label, li input:focus ~ label {
   border: 1px solid black;
   border-radius: 5px;
   letter-spacing: 0.2rem;
+}
+li input:valid ~ label::after, li input:focus ~ label::after {
+  content: none;
 }/*# sourceMappingURL=index.css.map */
