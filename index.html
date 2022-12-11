@@ -22,7 +22,7 @@
                             <ul>
                                 <li>
                                     <div class="input">
-                                        <input type="text" id="name" name="full_name" placeholder=" "required>
+                                        <input type="text" id="name" name="full_name" placeholder=" " required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
                                         <label for="name">Full name </label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
@@ -38,7 +38,7 @@
                                 </li>
                                 <li>
                                     <div class="input">
-                                        <input type="password" id="pswd" name="password" placeholder=" " autocomplete="off" required>
+                                        <input type="password" id="pswd" name="password" placeholder=" " autocomplete="off" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                                         <label for="pswd" >Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
