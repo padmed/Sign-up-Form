@@ -89,7 +89,7 @@ li {
   height: 15%;
   list-style: none;
 }
-li label {
+li .placeholder.label {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -98,7 +98,7 @@ li label {
   transition: 0.2s;
   font-size: 1.2rem;
 }
-li label::after {
+li .placeholder.label::after {
   content: " (required)";
   font-style: italic;
 }
@@ -110,6 +110,7 @@ li .material-symbols-outlined {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-weight: bolder;
 }
 li .input {
   width: 100%;
@@ -120,93 +121,117 @@ li .input {
   outline: none;
   display: flex;
 }
-li input {
+li input[placeholder=" "] {
   width: 82%;
   padding: 10px;
   border: none;
   outline: none;
   flex: 1;
 }
-li input:not(:-moz-placeholder-shown) ~ label {
-  transform: translateX(10px) translateY(-7px);
+li input:not(:-moz-placeholder-shown) ~ .placeholder.label {
+  transform: translateX(10px) translateY(-10px);
   font-size: 1rem;
   font-weight: 600;
   color: black;
   padding: 1px 10px;
   background-color: white;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 3px;
   letter-spacing: 0.2rem;
 }
-li input:not(:-ms-input-placeholder) ~ label {
-  transform: translateX(10px) translateY(-7px);
+li input:not(:-ms-input-placeholder) ~ .placeholder.label {
+  transform: translateX(10px) translateY(-10px);
   font-size: 1rem;
   font-weight: 600;
   color: black;
   padding: 1px 10px;
   background-color: white;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 3px;
   letter-spacing: 0.2rem;
 }
-li input:focus ~ label,
-li input:not(:placeholder-shown) ~ label {
-  transform: translateX(10px) translateY(-7px);
+li input:focus ~ .placeholder.label,
+li input:not(:placeholder-shown) ~ .placeholder.label {
+  transform: translateX(10px) translateY(-10px);
   font-size: 1rem;
   font-weight: 600;
   color: black;
   padding: 1px 10px;
   background-color: white;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 3px;
   letter-spacing: 0.2rem;
 }
-li input:not(:-moz-placeholder-shown) ~ label::after {
+li input:not(:-moz-placeholder-shown) ~ .placeholder.label::after {
   content: none;
 }
-li input:not(:-ms-input-placeholder) ~ label::after {
+li input:not(:-ms-input-placeholder) ~ .placeholder.label::after {
   content: none;
 }
-li input:focus ~ label::after,
-li input:not(:placeholder-shown) ~ label::after {
+li input:focus ~ .placeholder.label::after,
+li input:not(:placeholder-shown) ~ .placeholder.label::after {
   content: none;
 }
 li input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
   display: block;
-  color: red;
-  font-weight: bolder;
+  color: #FF5F5F;
 }
 li input:not(:-ms-input-placeholder):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
   display: block;
-  color: red;
-  font-weight: bolder;
+  color: #FF5F5F;
 }
 li input:not(:placeholder-shown):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
   display: block;
-  color: red;
-  font-weight: bolder;
+  color: #FF5F5F;
 }
 li input:not(:-moz-placeholder-shown):valid ~ .material-symbols-outlined.correct {
   display: block;
-  font-weight: bolder;
+  color: #59CE8F;
 }
 li input:not(:-ms-input-placeholder):valid ~ .material-symbols-outlined.correct {
   display: block;
-  font-weight: bolder;
+  color: #59CE8F;
 }
 li input:not(:placeholder-shown):valid ~ .material-symbols-outlined.correct {
   display: block;
-  font-weight: bolder;
+  color: #59CE8F;
 }
-li input:not(:-moz-placeholder-shown):valid ~ label {
-  background-color: black;
+li input:not(:-moz-placeholder-shown):valid ~ .placeholder.label {
+  background-color: #83FFE6;
+  color: black;
+}
+li input:not(:-ms-input-placeholder):valid ~ .placeholder.label {
+  background-color: #83FFE6;
+  color: black;
+}
+li input:not(:placeholder-shown):valid ~ .placeholder.label {
+  background-color: #83FFE6;
+  color: black;
+}
+li input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .placeholder.label {
+  background-color: #FF5F5F;
   color: white;
 }
-li input:not(:-ms-input-placeholder):valid ~ label {
-  background-color: black;
+li input:not(:-ms-input-placeholder):not(:focus):invalid ~ .placeholder.label {
+  background-color: #FF5F5F;
   color: white;
 }
-li input:not(:placeholder-shown):valid ~ label {
-  background-color: black;
+li input:not(:placeholder-shown):not(:focus):invalid ~ .placeholder.label {
+  background-color: #FF5F5F;
   color: white;
+}
+
+ul .checkbox {
+  align-self: center;
+  border: 1px solid;
+  display: column;
+  align-items: flex-start;
+}
+.signup {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
 }/*# sourceMappingURL=index.css.map */
