@@ -55,7 +55,7 @@ form{
         .left {
             width: max(50%, 500px);
             height: 100%;
-            border-right: 2px solid black;
+            // border-right: 5px solid black;
             
         }
 
@@ -81,7 +81,7 @@ form{
             &.desktop{
                 height: 100%;
                 width: 100%;
-                background-image: url("../Imgs/background-image.png");
+                background-image: url("../Imgs/background-image2.png");
                 background-size: cover;
                 background-repeat: repeat-x;
             }
