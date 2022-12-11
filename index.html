@@ -23,7 +23,7 @@
                                 <li>
                                     <div class="input">
                                         <input type="text" id="name" name="full_name" placeholder=" " required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
-                                        <label for="name">Full name </label>
+                                        <label class="placeholder label" for="name">Full name </label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
@@ -31,7 +31,7 @@
                                 <li>
                                     <div class="input">
                                         <input type="email" name="email" id="mail" placeholder=" "required>
-                                        <label for="mail" >Email</label>
+                                        <label class="placeholder label" for="mail" >Email</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
@@ -39,7 +39,7 @@
                                 <li>
                                     <div class="input">
                                         <input type="password" id="pswd" name="password" placeholder=" " autocomplete="off" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                                        <label for="pswd" >Password</label>
+                                        <label class="placeholder label" for="pswd" >Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
@@ -47,13 +47,17 @@
                                 <li>
                                     <div class="input">
                                         <input type="password" id="rep-pswd" placeholder=" " required>
-                                        <label for="rep-pswd">Repeat Password</label>
+                                        <label class="placeholder label" for="rep-pswd">Repeat Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
                                 </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="agreement" id="agreement">
+                                    <label for="agreement">I've reviewed at the functionality and styles of the input bars listed above.</label>
+                                </li>
                                 <li>
-                                    <button type="submit">submit</button>
+                                    <button type="submit" class="signup">submit</button>
                                 </li>
                             </ul>
                         </div>
