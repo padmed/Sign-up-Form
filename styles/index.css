@@ -55,7 +55,6 @@ form .content ul {
   main .left {
     width: max(50%, 500px);
     height: 100%;
-    border-right: 2px solid black;
   }
   main .right {
     display: flex;
@@ -75,7 +74,7 @@ form .content ul {
   .right .image-container.desktop {
     height: 100%;
     width: 100%;
-    background-image: url("../Imgs/background-image.png");
+    background-image: url("../Imgs/background-image2.png");
     background-size: cover;
     background-repeat: repeat-x;
   }
@@ -102,6 +101,14 @@ li label {
 li label::after {
   content: " (required)";
   font-style: italic;
+}
+li .material-symbols-outlined {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  padding-right: 0;
+  display: none;
 }
 li input {
   width: 100%;
@@ -155,4 +162,22 @@ li input:not(:-ms-input-placeholder) ~ label::after {
 li input:focus ~ label::after,
 li input:not(:placeholder-shown) ~ label::after {
   content: none;
+}
+li input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
+  display: block;
+}
+li input:not(:-ms-input-placeholder):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
+  display: block;
+}
+li input:not(:placeholder-shown):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
+  display: block;
+}
+li input:not(:-moz-placeholder-shown):valid ~ .material-symbols-outlined.correct {
+  display: block;
+}
+li input:not(:-ms-input-placeholder):valid ~ .material-symbols-outlined.correct {
+  display: block;
+}
+li input:not(:placeholder-shown):valid ~ .material-symbols-outlined.correct {
+  display: block;
 }/*# sourceMappingURL=index.css.map */
