@@ -94,7 +94,7 @@ li label {
   pointer-events: none;
   top: 0;
   left: 0;
-  padding: 18px;
+  padding: 17px;
   transition: 0.2s;
   font-size: 1.2rem;
 }
@@ -103,21 +103,25 @@ li label::after {
   font-style: italic;
 }
 li .material-symbols-outlined {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 13px;
-  padding-right: 0;
+  align-self: center;
+  padding: 10px;
   display: none;
 }
-li input {
+li .input {
   width: 100%;
-  height: 25px;
-  padding: 10px;
+  height: 40px;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1.5rem;
   outline: none;
+  display: flex;
+}
+li input {
+  width: 82%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  flex: 1;
 }
 li input:not(:-moz-placeholder-shown) ~ label {
   transform: translateX(10px) translateY(-7px);
@@ -189,4 +193,16 @@ li input:not(:-ms-input-placeholder):valid ~ .material-symbols-outlined.correct 
 li input:not(:placeholder-shown):valid ~ .material-symbols-outlined.correct {
   display: block;
   font-weight: bolder;
+}
+li input:not(:-moz-placeholder-shown):valid ~ label {
+  background-color: black;
+  color: white;
+}
+li input:not(:-ms-input-placeholder):valid ~ label {
+  background-color: black;
+  color: white;
+}
+li input:not(:placeholder-shown):valid ~ label {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
