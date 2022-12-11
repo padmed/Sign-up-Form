@@ -26,6 +26,7 @@ li {
         padding: 10px;
         display: none;
         user-select: none;
+        font-weight: bolder;
         
     }
 
@@ -49,14 +50,14 @@ li {
 
     input:focus~label,
     input:not(:placeholder-shown)~label {
-        transform: translateX(10px) translateY(-7px);
+        transform: translateX(10px) translateY(-10px);
         font-size: 1rem;
         font-weight: 600;
         color: black;
         padding: 1px 10px;
         background-color: white;
         border: 2px solid black;
-        border-radius: 5px;
+        border-radius: 3px;
         letter-spacing: 0.2rem;
 
         &::after {
@@ -66,19 +67,21 @@ li {
 
     input:not(:placeholder-shown):not(:focus):invalid~.material-symbols-outlined.incorrect {
         display: block;
-        color: red;
-        font-weight: bolder;
+        color: base.$redish;
     }
 
     input:not(:placeholder-shown):valid~.material-symbols-outlined.correct {
         display: block;
-        font-weight: bolder;
+        color: #59CE8F;
     }
 
     input:not(:placeholder-shown):valid~label {
-        background-color: black;
-        color: white;
+        background-color: #83FFE6;;
+        color: black;
     }
 
-
+    input:not(:placeholder-shown):not(:focus):invalid~label {
+        background-color: base.$redish;
+        color: white;
+    }
 }
