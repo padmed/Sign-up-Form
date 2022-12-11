@@ -86,11 +86,15 @@ ul{
     .checkbox {
         align-self: center;
         border: 1px solid;
-        display: column;
-        align-items: flex-start;
+        @include base.flex;
 
-        input[type="checkbox"] {
+        input{
+            margin: 10px;
+            display: none;
+        }
 
+        label {
+            flex: 1;
         }
     }
 }
