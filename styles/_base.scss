@@ -10,3 +10,12 @@ $redish: #FF5F5F;
     justify-content: $justify-pos;
     align-items: $align-pos;
 }
+
+@mixin input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+}
