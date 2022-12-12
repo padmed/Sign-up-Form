@@ -57,14 +57,16 @@ ul {
     main {
         display: flex;
         .left {
-            width: max(50%, 500px);
+            width: max(45%, 500px);
             height: 100%;
+            border-right: 5px solid black
         }
 
         .right {
             @include base.flex;
             height: 100%;
-            width: 50%;
+            width: 55%;
+            position: relative;
         }
     }
 
@@ -81,11 +83,11 @@ ul {
     .right {
         .image-container{
             &.desktop{
-                height: 100%;
-                width: 100%;
+                height: calc(100% - 30px);
+                width: calc(100% - 30px);
                 background-image: url("../Imgs/background-image2.png");
-                background-size: cover;
-                background-repeat: repeat-y;
+                background-size: contain;
+                border: 15px solid white;
             }
         }
     }
