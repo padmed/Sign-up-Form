@@ -145,4 +145,19 @@ ul{
 
 .signup {
     @include base.input;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    transition: 0.2s;
+    letter-spacing: 5px;
+
+    &:hover {
+        transform: scale(1.07);
+        background-color: #83FFE6;
+        color: black;
+    }
+
+    &:hover:active {
+        transform: scale(1.02);
+    }
 }
