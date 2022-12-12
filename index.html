@@ -21,7 +21,8 @@
                             <ul>
                                 <li>
                                     <div class="input">
-                                        <input type="text" id="name" name="full_name" placeholder=" " required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
+                                        <input type="text" id="name" name="full_name" placeholder=" " required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" oninvalid="this.setCustomValidity('Please Enter Valid Full Name. Example: John Smith, John III Johnson, John Doe-Smith.')"
+                                        oninput="this.setCustomValidity('')">
                                         <label class="placeholder label" for="name">Full name </label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
@@ -29,7 +30,8 @@
                                 </li>
                                 <li>
                                     <div class="input">
-                                        <input type="email" name="email" id="mail" placeholder=" "required>
+                                        <input type="email" name="email" id="mail" placeholder=" "required oninvalid="this.setCustomValidity('Please Enter Valid Email. Example: example@mail.com')"
+                                            oninput="this.setCustomValidity('')">
                                         <label class="placeholder label" for="mail" >Email</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
@@ -37,7 +39,8 @@
                                 </li>
                                 <li>
                                     <div class="input">
-                                        <input type="password" id="pswd" name="password" placeholder=" " autocomplete="off" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                        <input type="password" id="pswd" name="password" placeholder=" " autocomplete="off" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity('Password Should Contain: 8-64 characters, including 1 uppercase and 1 digit characters')"
+                                            oninput="this.setCustomValidity('')">
                                         <label class="placeholder label" for="pswd" >Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
@@ -45,8 +48,9 @@
                                 </li>
                                 <li>
                                     <div class="input">
-                                        <input type="password" id="rep-pswd" placeholder=" " required>
-                                        <label class="placeholder label" for="rep-pswd">Repeat Password</label>
+                                        <input type="password" id="rep-pswd" placeholder=" " required oninvalid="this.setCustomValidity('Please Repeat Password')"
+                                        oninput="this.setCustomValidity('')">
+                                        <label class="placeholder label" for="rep-pswd">Confirm Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
@@ -58,7 +62,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <button type="submit" class="signup">submit</button>
+                                    <button type="submit" class="signup">Sign up</button>
                                 </li>
                             </ul>
                         </div>
