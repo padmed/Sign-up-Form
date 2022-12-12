@@ -85,16 +85,60 @@ li {
 ul{
     .checkbox {
         align-self: center;
-        border: 1px solid;
-        @include base.flex;
 
         input{
-            margin: 10px;
             display: none;
         }
 
         label {
-            flex: 1;
+            display: block;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            transition: 0.2s;
+            padding-left: 29px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        input:hover + label:hover {
+            color: #59CE8F
+        }
+
+        input:hover + label:before{
+            background: #59CE8F;
+            box-shadow: inset 0px 0px 0px 2px #59CE8F;
+        } 
+
+        input + label:before {
+            margin-left: 1px;
+            content: "";
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 1.6rem;
+            height: 1.6rem;
+            border: 1px solid #343a3f;
+            border-radius: 0.2rem;
+            -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+            transition: all 0.2s, background 0.2s ease-in-out;
+            background: #f3f3f3;
+        }
+
+        input:checked + label:before {
+            width: 1.4em;
+            height: 1.4em;
+            border-radius: 0.4rem;
+            border: 2px solid #fff;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            background: #59CE8F;
+            box-shadow: 0 0 0 2px #59CE8F;
         }
     }
 }
