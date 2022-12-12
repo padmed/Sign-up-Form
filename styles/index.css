@@ -36,6 +36,17 @@ form .content ul {
 ul li {
   margin-top: max(20px, 4vh);
 }
+ul li:first-of-type {
+  margin-top: 0;
+  margin-top: 20px;
+}
+ul h2 {
+  width: 66%;
+  font-size: 2.2rem;
+  align-self: center;
+  margin-bottom: 0;
+  padding-left: 4px;
+}
 
 .image-container.mobile {
   width: 100%;

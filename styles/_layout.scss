@@ -23,7 +23,6 @@ form{
     
         ul {
             height: 100%;
-
             @include base.flex(column, start);
             padding: 0;
         }
@@ -33,6 +32,19 @@ form{
 ul {
     li {
         margin-top: max(20px, 4vh);
+
+        &:first-of-type {
+            margin-top: 0;
+            margin-top: 20px;
+        }
+    }
+
+    h2 {
+        width: 66%;
+        font-size: 2.2rem;
+        align-self: center;
+        margin-bottom: 0;
+        padding-left: 4px;
     }
 }
 
