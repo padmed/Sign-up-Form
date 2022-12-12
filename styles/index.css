@@ -22,17 +22,19 @@ form {
 }
 form .content {
   height: 100%;
-  margin-top: 10vh;
+  margin-top: max(50px, 10vh);
 }
 form .content ul {
   height: 100%;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   padding: 0;
-  gap: 3vh;
+}
+
+ul li {
+  margin-top: max(20px, 4vh);
 }
 
 .image-container.mobile {
@@ -76,7 +78,7 @@ form .content ul {
     width: 100%;
     background-image: url("../Imgs/background-image2.png");
     background-size: cover;
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
   }
   .image-container.mobile {
     background-image: none;
@@ -279,4 +281,17 @@ ul .checkbox input:checked + label:before {
   border-radius: 5px;
   font-size: 1.5rem;
   outline: none;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  transition: 0.2s;
+  letter-spacing: 5px;
+}
+.signup:hover {
+  transform: scale(1.07);
+  background-color: #83FFE6;
+  color: black;
+}
+.signup:hover:active {
+  transform: scale(1.02);
 }/*# sourceMappingURL=index.css.map */
