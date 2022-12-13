@@ -340,4 +340,31 @@ ul .checkbox input:checked + label:before {
 }
 .signup.google img {
   width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .signup {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .signup:hover {
+    background: rgb(92, 201, 250) radial-gradient(circle, transparent 1%, rgb(92, 201, 250) 1%) center/15000%;
+  }
+  .signup:active {
+    background-color: rgb(92, 201, 250);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  .signup.signup.google {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .signup.signup.google:hover {
+    background: rgb(235, 78, 83) radial-gradient(circle, transparent 1%, rgb(235, 78, 83) 1%) center/15000%;
+  }
+  .signup.signup.google:active {
+    background-color: rgb(235, 78, 83);
+    background-size: 100%;
+    transition: background 0s;
+  }
 }/*# sourceMappingURL=index.css.map */
