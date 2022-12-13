@@ -314,8 +314,8 @@ ul .checkbox input:checked + label:before {
   font-size: 1.7rem;
   background-color: white;
   color: black;
+  letter-spacing: 3px;
 }
 .signup.google:hover {
   background-color: #FF5F5F;
-  letter-spacing: 3px;
 }/*# sourceMappingURL=index.css.map */
