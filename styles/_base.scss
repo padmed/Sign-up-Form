@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
 $font-Comfortaa: 'Comfortaa', cursive;
-$greenish: #59CE8F;
-$redish: #FF5F5F;
+$blackish: rgb(46,64,89);
+$redish: rgb(235, 78, 83);
+$aqua: rgb(92, 201, 250);
 
 @mixin flex ($direction: row, $justify-pos:center, $align-pos:center) {
     display: flex;
