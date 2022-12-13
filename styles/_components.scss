@@ -48,10 +48,10 @@ li {
         transform: translateX(10px) translateY(-10px);
         font-size: 1rem;
         font-weight: 600;
-        color: black;
+        color: base.$blackish;
         padding: 1px 10px;
         background-color: white;
-        border: 2px solid black;
+        border: 2px solid base.$blackish;
         border-radius: 3px;
         letter-spacing: 0.2rem;
 
@@ -67,12 +67,12 @@ li {
 
     input:not(:placeholder-shown):valid~.material-symbols-outlined.correct {
         display: block;
-        color: #59CE8F;
+        color: base.$aqua;
     }
 
     input:not(:placeholder-shown):valid~.placeholder.label {
-        background-color: #83FFE6;;
-        color: black;
+        background-color: base.$aqua;
+        color: base.$blackish;
     }
 
     input:not(:placeholder-shown):not(:focus):invalid~.placeholder.label {
@@ -103,13 +103,22 @@ ul{
             position: relative;
         }
 
+        input:checked:hover + label:hover {
+            color: base.$aqua
+        }
+
         input:hover + label:hover {
-            color: #59CE8F
+            color: base.$redish
+        }
+
+        input:checked:hover + label:before {
+            background: base.$aqua;
+            box-shadow: inset 0px 0px 0px 2px base.$aqua;
         }
 
         input:hover + label:before{
-            background: #59CE8F;
-            box-shadow: inset 0px 0px 0px 2px #59CE8F;
+            background: base.$redish;
+            box-shadow: inset 0px 0px 0px 2px base.$redish;
         } 
 
         input + label:before {
@@ -123,7 +132,7 @@ ul{
             top: 2px;
             width: 1.6rem;
             height: 1.6rem;
-            border: 1px solid #343a3f;
+            border: 1px solid base.$blackish;
             border-radius: 0.2rem;
             -webkit-transition: all 0.2s, background 0.2s ease-in-out;
             transition: all 0.2s, background 0.2s ease-in-out;
@@ -137,24 +146,24 @@ ul{
             border: 2px solid #fff;
             -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-            background: #59CE8F;
-            box-shadow: 0 0 0 2px #59CE8F;
+            background: base.$aqua;
+            box-shadow: 0 0 0 2px base.$aqua;
         }
     }
 }
 
 .signup {
     @include base.input;
-    background-color: black;
     color: white;
     font-size: 2rem;
     transition: 0.2s;
     letter-spacing: 5px;
+    background-color: base.$blackish;
 
     &:hover {
         transform: scale(1.04);
-        background-color: #83FFE6;
-        color: black;
+        background-color: base.$aqua;
+        color: base.$blackish;
     }
 
     &:hover:active {
@@ -166,7 +175,7 @@ ul{
     position: relative;
     font-size: 1.7rem;
     background-color: white;
-    color: black;
+    color: base.$blackish;
     letter-spacing: 3px;
     &:hover {
         background-color: base.$redish;
