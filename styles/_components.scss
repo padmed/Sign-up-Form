@@ -3,7 +3,7 @@
 li {
     position: relative;
     width: 66%;
-    height: 15%;
+    height: max(15%, 20px);
     list-style: none;
     
     .placeholder.label {
@@ -181,4 +181,5 @@ ul{
         background-color: base.$redish;
     }
 }
+
 

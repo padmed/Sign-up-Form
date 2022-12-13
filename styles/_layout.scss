@@ -20,7 +20,7 @@ form{
     width: 100%;
     .content {
         height: 100%;
-        margin-top: max(50px, 10vh);
+        margin-top: max(20px, 4vh);
     
         ul {
             height: 100%;
@@ -59,7 +59,7 @@ ul {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 550px){
     html,body,main {
         height: 100%;
         font-family: base.$font-Comfortaa;
@@ -93,6 +93,7 @@ ul {
         }
     }
 
+
     .right {
         .image-container{
             &.desktop{
@@ -100,7 +101,7 @@ ul {
                 width: calc(100% - 30px);
                 background-image: url("../Imgs/vecteezy_bauhaus-pattern-geometric-background-vector-stock_13133475.jpg");
                 background-size: contain;
-                background-repeat: repeat-x;
+                background-repeat: repeat;
                 border: 15px solid white;
 
             }
@@ -112,5 +113,10 @@ ul {
             background-image: none;
             height: 0%;
         }
+    }
+
+    .content {
+        height: 100%;
+        margin-top: max(20px, 7vh);
     }
 }
