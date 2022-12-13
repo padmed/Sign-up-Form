@@ -120,3 +120,20 @@ ul {
         margin-top: max(20px, 7vh);
     }
 }
+
+li:last-child {
+    margin-top: 0;
+    margin-top: 1vh;
+    font-size: 1.3rem;
+
+    a {
+        color: base.$aqua;
+        background-color: transparent;
+        text-decoration: none;
+
+        &:hover {
+            color: base.$redish;
+            text-decoration: underline;
+        }
+    }
+}

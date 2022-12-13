@@ -104,6 +104,21 @@ ul h2 {
     margin-top: max(20px, 7vh);
   }
 }
+li:last-child {
+  margin-top: 0;
+  margin-top: 1vh;
+  font-size: 1.3rem;
+}
+li:last-child a {
+  color: rgb(92, 201, 250);
+  background-color: transparent;
+  text-decoration: none;
+}
+li:last-child a:hover {
+  color: rgb(235, 78, 83);
+  text-decoration: underline;
+}
+
 li {
   position: relative;
   width: 66%;
