@@ -73,6 +73,7 @@ ul h2 {
     width: max(45%, 500px);
     height: 100%;
     border-right: 5px solid rgb(46, 64, 89);
+    overflow: auto;
   }
   main .right {
     display: flex;
