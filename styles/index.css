@@ -7,7 +7,7 @@ html, body, main, .left {
 }
 
 header {
-  height: 10%;
+  height: 13%;
 }
 header h1 {
   display: flex;
@@ -35,7 +35,7 @@ form .content ul {
 }
 
 ul li {
-  margin-top: max(20px, 4vh);
+  margin-top: max(15px, 3vh);
 }
 ul li:first-of-type {
   margin-top: 0;
@@ -63,6 +63,9 @@ ul h2 {
     font-family: "Comfortaa", cursive;
     font-size: 10px;
   }
+  html header, body header, main header {
+    height: 8%;
+  }
   main {
     display: flex;
   }
@@ -87,6 +90,12 @@ ul h2 {
     padding: 2vh;
     padding-top: 2vh;
   }
+  .left form {
+    height: max(80%, 600px);
+  }
+  .left .content {
+    height: 100%;
+  }
   .right .image-container.desktop {
     height: calc(100% - 30px);
     width: calc(100% - 30px);
@@ -104,17 +113,21 @@ ul h2 {
     margin-top: max(20px, 7vh);
   }
 }
-li:last-child {
+form {
+  flex: wrap;
+}
+
+li:last-child, footer {
   margin-top: 0;
   margin-top: 1vh;
   font-size: 1.3rem;
 }
-li:last-child a {
+li:last-child a, footer a {
   color: rgb(92, 201, 250);
   background-color: transparent;
   text-decoration: none;
 }
-li:last-child a:hover {
+li:last-child a:hover, footer a:hover {
   color: rgb(235, 78, 83);
   text-decoration: underline;
 }
@@ -122,7 +135,7 @@ li:last-child a:hover {
 li {
   position: relative;
   width: 66%;
-  height: max(15%, 20px);
+  height: max(15%, 15px);
   list-style: none;
 }
 li .placeholder.label {

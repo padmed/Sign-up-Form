@@ -8,7 +8,7 @@ html,body,main,.left {
 }
 
 header {
-    height: 10%;
+    height: 13%;
     h1 {
         @include base.flex;
         font-size: 3rem;
@@ -32,7 +32,7 @@ form{
 
 ul {
     li {
-        margin-top: max(20px, 4vh);
+        margin-top: max(15px, 3vh);
 
         &:first-of-type {
             margin-top: 0;
@@ -65,6 +65,10 @@ ul {
         font-family: base.$font-Comfortaa;
         font-size: 10px;
 
+        header {
+            height: 8%;
+        }
+
     }
 
     main {
@@ -90,6 +94,13 @@ ul {
             font-size: 2.7rem;
             padding: 2vh;
             padding-top: 2vh;
+        }
+
+        form {
+            height: max(80%, 600px);
+        }
+        .content {
+            height: 100%;
         }
     }
 
@@ -121,7 +132,11 @@ ul {
     }
 }
 
-li:last-child {
+form {
+    flex: wrap;
+}
+
+li:last-child, footer {
     margin-top: 0;
     margin-top: 1vh;
     font-size: 1.3rem;
@@ -137,3 +152,4 @@ li:last-child {
         }
     }
 }
+
