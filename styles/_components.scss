@@ -26,7 +26,7 @@ li {
         padding: 10px;
         display: none;
         user-select: none;
-        font-weight: bolder;
+        font-weight: 600;
         
     }
 
@@ -101,6 +101,7 @@ ul{
             padding-left: 29px;
             margin-bottom: 20px;
             position: relative;
+            font-size: 1.2rem;
         }
 
         input:checked:hover + label:hover {
@@ -172,14 +173,20 @@ ul{
 }
 
 .signup.google {
-    position: relative;
-    font-size: 1.7rem;
+    @include base.flex;
+    gap: 2vh;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
     background-color: white;
     color: base.$blackish;
     letter-spacing: 3px;
+
     &:hover {
         background-color: base.$redish;
     }
-}
 
+    img {
+        width: 20px;
+    }
+}
 

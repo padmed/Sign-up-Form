@@ -131,7 +131,7 @@ li .material-symbols-outlined {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-weight: bolder;
+  font-weight: 600;
 }
 li .input {
   width: 100%;
@@ -259,6 +259,7 @@ ul .checkbox label {
   padding-left: 29px;
   margin-bottom: 20px;
   position: relative;
+  font-size: 1.2rem;
 }
 ul .checkbox input:checked:hover + label:hover {
   color: rgb(92, 201, 250);
@@ -323,12 +324,20 @@ ul .checkbox input:checked + label:before {
 }
 
 .signup.google {
-  position: relative;
-  font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
   background-color: white;
   color: rgb(46, 64, 89);
   letter-spacing: 3px;
 }
 .signup.google:hover {
   background-color: rgb(235, 78, 83);
+}
+.signup.google img {
+  width: 20px;
 }/*# sourceMappingURL=index.css.map */
