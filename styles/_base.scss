@@ -20,3 +20,18 @@ $aqua: rgb(92, 201, 250);
     font-size: 1.5rem;
     outline: none;
 }
+
+@mixin tremble ($color: $aqua){
+        background-position: center;
+        transition: background 0.8s;
+
+          &:hover {
+            background: $color radial-gradient(circle, transparent 1%, $color 1%) center/15000%;
+          }
+
+          &:active {
+            background-color: $color;
+            background-size: 100%;
+            transition: background 0s;
+          }
+}
