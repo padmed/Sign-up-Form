@@ -301,10 +301,21 @@ ul .checkbox input:checked + label:before {
   letter-spacing: 5px;
 }
 .signup:hover {
-  transform: scale(1.07);
+  transform: scale(1.04);
   background-color: #83FFE6;
   color: black;
 }
 .signup:hover:active {
   transform: scale(1.02);
+}
+
+.signup.google {
+  position: relative;
+  font-size: 1.7rem;
+  background-color: white;
+  color: black;
+}
+.signup.google:hover {
+  background-color: #FF5F5F;
+  letter-spacing: 3px;
 }/*# sourceMappingURL=index.css.map */

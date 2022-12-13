@@ -152,7 +152,7 @@ ul{
     letter-spacing: 5px;
 
     &:hover {
-        transform: scale(1.07);
+        transform: scale(1.04);
         background-color: #83FFE6;
         color: black;
     }
@@ -161,3 +161,15 @@ ul{
         transform: scale(1.02);
     }
 }
+
+.signup.google {
+    position: relative;
+    font-size: 1.7rem;
+    background-color: white;
+    color: black;
+    &:hover {
+        background-color: base.$redish;
+        letter-spacing: 3px;
+    }
+}
+
