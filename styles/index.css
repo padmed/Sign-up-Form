@@ -3,6 +3,7 @@ html, body, main, .left {
   height: 100%;
   font-family: "Comfortaa", cursive;
   font-size: 10px;
+  color: rgb(46, 64, 89);
 }
 
 header {
@@ -51,7 +52,7 @@ ul h2 {
 .image-container.mobile {
   width: 100%;
   height: max(50%, 25px);
-  background-image: url("../Imgs/background-mobile.png");
+  background-image: url("../Imgs/mobile2.jpg");
   background-size: cover;
   background-repeat: repeat;
 }
@@ -68,7 +69,7 @@ ul h2 {
   main .left {
     width: max(45%, 500px);
     height: 100%;
-    border-right: 5px solid black;
+    border-right: 5px solid rgb(46, 64, 89);
   }
   main .right {
     display: flex;
@@ -89,8 +90,9 @@ ul h2 {
   .right .image-container.desktop {
     height: calc(100% - 30px);
     width: calc(100% - 30px);
-    background-image: url("../Imgs/background-image.png");
+    background-image: url("../Imgs/vecteezy_bauhaus-pattern-geometric-background-vector-stock_13133475.jpg");
     background-size: contain;
+    background-repeat: repeat-x;
     border: 15px solid white;
   }
   .image-container.mobile {
@@ -189,15 +191,15 @@ li input:not(:placeholder-shown) ~ .placeholder.label::after {
 }
 li input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
   display: block;
-  color: #FF5F5F;
+  color: rgb(235, 78, 83);
 }
 li input:not(:-ms-input-placeholder):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
   display: block;
-  color: #FF5F5F;
+  color: rgb(235, 78, 83);
 }
 li input:not(:placeholder-shown):not(:focus):invalid ~ .material-symbols-outlined.incorrect {
   display: block;
-  color: #FF5F5F;
+  color: rgb(235, 78, 83);
 }
 li input:not(:-moz-placeholder-shown):valid ~ .material-symbols-outlined.correct {
   display: block;
@@ -224,15 +226,15 @@ li input:not(:placeholder-shown):valid ~ .placeholder.label {
   color: black;
 }
 li input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .placeholder.label {
-  background-color: #FF5F5F;
+  background-color: rgb(235, 78, 83);
   color: white;
 }
 li input:not(:-ms-input-placeholder):not(:focus):invalid ~ .placeholder.label {
-  background-color: #FF5F5F;
+  background-color: rgb(235, 78, 83);
   color: white;
 }
 li input:not(:placeholder-shown):not(:focus):invalid ~ .placeholder.label {
-  background-color: #FF5F5F;
+  background-color: rgb(235, 78, 83);
   color: white;
 }
 
@@ -317,5 +319,5 @@ ul .checkbox input:checked + label:before {
   letter-spacing: 3px;
 }
 .signup.google:hover {
-  background-color: #FF5F5F;
+  background-color: rgb(235, 78, 83);
 }/*# sourceMappingURL=index.css.map */
