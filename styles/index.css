@@ -43,11 +43,11 @@ form .content ul {
 }
 
 ul li {
-  margin-top: max(15px, 3vh);
+  margin-top: 15px;
 }
 ul li:first-of-type {
   margin-top: 0;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 ul h2 {
   width: 66%;
@@ -71,8 +71,8 @@ ul h2 {
 
 ul > p, footer {
   margin-top: 0;
-  margin-top: 3vh;
   font-size: 1.3rem;
+  padding-top: 30px;
 }
 ul > p a, footer a {
   color: rgb(92, 201, 250);
@@ -86,14 +86,14 @@ ul > p a:hover, footer a:hover {
 
 footer {
   margin-top: auto;
-  padding-top: 5vh;
-  margin-bottom: 2vh;
+  padding-top: 50px;
+  margin-bottom: 20px;
 }
 footer a {
   color: rgb(235, 78, 83);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 500px) {
   html, body, main {
     height: 100%;
     font-family: "Comfortaa", cursive;
