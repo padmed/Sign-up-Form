@@ -157,7 +157,7 @@ ul{
 
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px),not screen and (hover: hover){
     .signup {
         @include base.tremble;
         @include base.input;
@@ -211,7 +211,7 @@ ul{
         &:hover {
             background-color: base.$redish;
         }
-    
+        
         img {
             width: 20px;
         }

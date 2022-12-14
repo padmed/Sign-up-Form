@@ -57,6 +57,10 @@ ul h2 {
   background-repeat: repeat;
 }
 
+.signup {
+  margin-bottom: 2vh;
+}
+
 @media only screen and (min-width: 768px) {
   html, body, main {
     height: 100%;
@@ -92,7 +96,7 @@ ul h2 {
     padding-top: 2vh;
   }
   .left form {
-    height: max(80%, 600px);
+    height: min(80%, 600px);
   }
   .left .content {
     height: 100%;
@@ -116,21 +120,6 @@ ul h2 {
 }
 form {
   flex: wrap;
-}
-
-li:last-child, footer {
-  margin-top: 0;
-  margin-top: 1vh;
-  font-size: 1.3rem;
-}
-li:last-child a, footer a {
-  color: rgb(92, 201, 250);
-  background-color: transparent;
-  text-decoration: none;
-}
-li:last-child a:hover, footer a:hover {
-  color: rgb(235, 78, 83);
-  text-decoration: underline;
 }
 
 li {
@@ -330,7 +319,7 @@ ul .checkbox input:checked + label:before {
   box-shadow: 0 0 0 2px rgb(92, 201, 250);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px), not screen and (hover: hover) {
   .signup {
     background-position: center;
     transition: background 1s;

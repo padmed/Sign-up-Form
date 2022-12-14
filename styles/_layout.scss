@@ -59,6 +59,27 @@ ul {
     }
 }
 
+.signup {
+    margin-bottom: 2vh;
+}
+
+// .left > p  {
+//     margin-top: 0;
+//     margin-top: 3vh;
+//     font-size: 1.3rem;
+
+//     a {
+//         color: base.$aqua;
+//         background-color: transparent;
+//         text-decoration: none;
+
+//         &:hover {
+//             color: base.$redish;
+//             text-decoration: underline;
+//         }
+//     }
+// }
+
 @media only screen and (min-width: 768px){
     html,body,main {
         height: 100%;
@@ -98,13 +119,12 @@ ul {
         }
 
         form {
-            height: max(80%, 600px);
+            height: min(80%, 600px);
         }
         .content {
             height: 100%;
         }
     }
-
 
     .right {
         .image-container{
@@ -137,20 +157,5 @@ form {
     flex: wrap;
 }
 
-li:last-child, footer {
-    margin-top: 0;
-    margin-top: 1vh;
-    font-size: 1.3rem;
 
-    a {
-        color: base.$aqua;
-        background-color: transparent;
-        text-decoration: none;
-
-        &:hover {
-            color: base.$redish;
-            text-decoration: underline;
-        }
-    }
-}
 
