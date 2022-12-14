@@ -153,50 +153,68 @@ ul{
     }
 }
 
-.signup {
-    @include base.input;
-    color: white;
-    font-size: 2rem;
-    transition: 0.2s;
-    letter-spacing: 5px;
-    background-color: base.$blackish;
 
-    &:hover {
-        transform: scale(1.04);
-        background-color: base.$aqua;
-        color: base.$blackish;
-    }
 
-    &:hover:active {
-        transform: scale(1.02);
-    }
-}
 
-.signup.google {
-    @include base.flex;
-    gap: 2vh;
-    flex-wrap: wrap;
-    font-size: 1.3rem;
-    background-color: white;
-    color: base.$blackish;
-    letter-spacing: 3px;
-
-    &:hover {
-        background-color: base.$redish;
-    }
-
-    img {
-        width: 20px;
-    }
-}
 
 @media only screen and (max-width: 768px){
     .signup {
-        @include base.tremble
+        @include base.tremble;
+        @include base.input;
+        color: white;
+        background-color: base.$blackish;
+        user-select: none;
     }
 
-    .signup.signup.google {
-        @include base.tremble(base.$redish)
+    .signup.google {
+        @include base.tremble(base.$redish);
+        background-color: white;
+        @include base.flex;
+        color: base.$blackish;
+        gap: 2vh;
+
+        img {
+            width: 3rem;
+        }
     }
-      
+}
+
+@media (hover: hover) {
+    .signup {
+        @include base.input;
+        color: white;
+        font-size: 2rem;
+        transition: 0.2s;
+        letter-spacing: 5px;
+        background-color: base.$blackish;
+    
+        &:hover {
+            transform: scale(1.04);
+            background-color: base.$aqua;
+            color: base.$blackish;
+        }
+    
+        &:hover:active {
+            transform: scale(1.02);
+        }
+    }
+    
+    .signup.google {
+        @include base.flex;
+        gap: 2vh;
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+        background-color: white;
+        color: base.$blackish;
+        letter-spacing: 3px;
+    
+        &:hover {
+            background-color: base.$redish;
+        }
+    
+        img {
+            width: 20px;
+        }
+    }
+    
 }
