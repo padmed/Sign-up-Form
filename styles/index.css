@@ -4,10 +4,19 @@ html, body, main, .left {
   font-family: "Comfortaa", cursive;
   font-size: 10px;
   color: rgb(46, 64, 89);
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header {
   height: 13%;
+  width: 100%;
 }
 header h1 {
   display: flex;
@@ -18,7 +27,6 @@ header h1 {
 }
 
 form {
-  height: 60%;
   width: 100%;
 }
 form .content {
@@ -78,6 +86,10 @@ ul h2 {
     height: 100%;
     border-right: 5px solid rgb(46, 64, 89);
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   main .right {
     display: flex;
@@ -86,7 +98,6 @@ ul h2 {
     align-items: center;
     height: 100%;
     width: 55%;
-    position: relative;
   }
   .left h1 {
     display: block;
@@ -94,9 +105,6 @@ ul h2 {
     font-size: 2.7rem;
     padding: 2vh;
     padding-top: 2vh;
-  }
-  .left form {
-    height: min(80%, 600px);
   }
   .left .content {
     height: 100%;

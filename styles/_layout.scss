@@ -5,10 +5,16 @@ html,body,main,.left {
     font-family: base.$font-Comfortaa;
     font-size: 10px;
     color: base.$blackish;
+    width: 100%
+}
+
+.left {
+    @include base.flex(column, space-between);
 }
 
 header {
     height: 13%;
+    width: 100%;
     h1 {
         @include base.flex;
         font-size: 3rem;
@@ -16,7 +22,7 @@ header {
 }
 
 form{
-    height: 60%;
+    // height: 60%;
     width: 100%;
     .content {
         height: 100%;
@@ -99,13 +105,13 @@ ul {
             height: 100%;
             border-right: 5px solid base.$blackish;
             overflow: auto;
+            @include base.flex(column, flex-start)
         }
 
         .right {
             @include base.flex;
             height: 100%;
             width: 55%;
-            position: relative;
         }
     }
 
@@ -118,9 +124,9 @@ ul {
             padding-top: 2vh;
         }
 
-        form {
-            height: min(80%, 600px);
-        }
+        // form {
+        //      height: min(80%, 600px);
+        // }
         .content {
             height: 100%;
         }
