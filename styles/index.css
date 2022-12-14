@@ -10,7 +10,7 @@ html, body, main, .left {
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -67,6 +67,30 @@ ul h2 {
 
 .signup {
   margin-bottom: 2vh;
+}
+
+ul > p, footer {
+  margin-top: 0;
+  margin-top: 3vh;
+  font-size: 1.3rem;
+}
+ul > p a, footer a {
+  color: rgb(92, 201, 250);
+  background-color: transparent;
+  text-decoration: none;
+}
+ul > p a:hover, footer a:hover {
+  color: rgb(235, 78, 83);
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 5vh;
+  margin-bottom: 2vh;
+}
+footer a {
+  color: rgb(235, 78, 83);
 }
 
 @media only screen and (min-width: 768px) {

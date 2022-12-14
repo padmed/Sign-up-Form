@@ -9,7 +9,7 @@ html,body,main,.left {
 }
 
 .left {
-    @include base.flex(column, space-between);
+    @include base.flex(column, flex-start);
 }
 
 header {
@@ -69,22 +69,37 @@ ul {
     margin-bottom: 2vh;
 }
 
-// .left > p  {
-//     margin-top: 0;
-//     margin-top: 3vh;
-//     font-size: 1.3rem;
+ul > p, footer  {
+    margin-top: 0;
+    margin-top: 3vh;
+    font-size: 1.3rem;
 
-//     a {
-//         color: base.$aqua;
-//         background-color: transparent;
-//         text-decoration: none;
 
-//         &:hover {
-//             color: base.$redish;
-//             text-decoration: underline;
-//         }
-//     }
-// }
+    a {
+        color: base.$aqua;
+        background-color: transparent;
+        text-decoration: none;
+
+        &:hover {
+            color: base.$redish;
+            text-decoration: underline;
+        }
+    }
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 5vh;
+    margin-bottom: 2vh;
+
+    a {
+        color: base.$redish;
+    }
+
+
+    
+
+}
 
 @media only screen and (min-width: 768px){
     html,body,main {
