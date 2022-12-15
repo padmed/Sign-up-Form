@@ -108,7 +108,7 @@ footer a {
   main .left {
     width: max(45%, 500px);
     height: 100%;
-    border-right: 5px solid rgb(46, 64, 89);
+    border-right: 9px solid rgb(46, 64, 89);
     overflow: auto;
     display: flex;
     flex-direction: column;
