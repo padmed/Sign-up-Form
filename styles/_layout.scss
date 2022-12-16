@@ -26,7 +26,7 @@ form{
     width: 100%;
     .content {
         height: 100%;
-        margin-top: max(20px, 4vh);
+        // margin-top: max(20px, 4vh);
     
         ul {
             height: 100%;
@@ -39,6 +39,7 @@ form{
 ul {
     li {
         margin-top: 15px;
+        // margin-bottom: 20px; 
 
         &:first-of-type {
             margin-top: 0;
@@ -54,6 +55,24 @@ ul {
         padding-left: 4px;
     }
 }
+
+
+
+.prompt {
+    font-size: 1rem;
+    color: base.$blackish;
+    margin: 5px;
+    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    -o-animation: fadeIn 0.5s;
+    -ms-animation: fadeIn 0.5s;
+    display: none;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .image-container {
     &.mobile {
@@ -96,10 +115,6 @@ footer {
     a {
         color: base.$redish;
     }
-
-
-    
-
 }
 
 @media only screen and (min-width: 768px) and (min-height: 500px){
