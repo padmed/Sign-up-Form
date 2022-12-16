@@ -24,38 +24,42 @@
                                 <li>
                                     <div class="input">
                                         <input type="text" id="name" name="full_name" placeholder=" " required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" oninvalid="this.setCustomValidity('Please Enter Valid Full Name. Example: John Smith, John III Johnson, John Doe-Smith.')"
-                                        oninput="this.setCustomValidity('')">
-                                        <label class="placeholder label" for="name">Full name </label>
+                                        oninput="this.setCustomValidity('')" data-prompt="name">
+                                        <label class="placeholder label" for="name"  >Full name </label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
+                                    <span class="prompt name" data-prompt="name">Please Enter Full Name. Example: John Smith, John III Johnson, John Doe-Smith.</span>
                                 </li>
                                 <li>
                                     <div class="input">
                                         <input type="email" name="email" id="mail" placeholder=" "required oninvalid="this.setCustomValidity('Please Enter Valid Email. Example: example@mail.com')"
-                                            oninput="this.setCustomValidity('')">
+                                            oninput="this.setCustomValidity('')" data-prompt="email">
                                         <label class="placeholder label" for="mail" >Email</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
+                                    <span class="prompt mail" data-prompt="email">Please Valid Email. Example: example@mail.com</span>
                                 </li>
                                 <li>
                                     <div class="input">
                                         <input type="password" id="pswd" name="password" placeholder=" " autocomplete="off" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity('Password Should Contain: 8-64 characters, including 1 uppercase and 1 digit characters')"
-                                            oninput="this.setCustomValidity('')">
-                                        <label class="placeholder label" for="pswd" >Password</label>
+                                            oninput="this.setCustomValidity('')" data-prompt="pswd">
+                                        <label class="placeholder label" for="pswd">Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
+                                    <span class="prompt mail " data-prompt="pswd">Password Should Contain: 8-64 characters, including 1 uppercase and 1 digit characters</span>
                                 </li>
                                 <li>
                                     <div class="input">
                                         <input type="password" id="rep-pswd" placeholder=" " required oninvalid="this.setCustomValidity('Please Repeat Password')"
-                                        oninput="this.setCustomValidity('')">
+                                        oninput="this.setCustomValidity('')" data-prompt="rePswd">
                                         <label class="placeholder label" for="rep-pswd">Confirm Password</label>
                                         <span class="material-symbols-outlined incorrect">cancel</span>
                                         <span class="material-symbols-outlined correct"> check_circle</span>
                                     </div>
+                                    <span class="prompt mail " data-prompt="rePswd">Please Repeat Password</span>
                                 </li>
                                 <li class="checkbox">
                                     <input type="checkbox" name="agreement" id="agreement">
